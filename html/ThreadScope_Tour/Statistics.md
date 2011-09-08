@@ -5,11 +5,13 @@ Collect statistics about a program so that you know what you're ThreadScoping
 * Baseline vs parallel timings
 * Spark creation and conversion
 
-Words
------
+Concepts
+--------
 * sparks converted - sparks actually executed; whatever sparks you create,
   you generally want them to be converted rather than pruned
-* sparks pruned - 
+* sparks pruned - sparks discarded by the runtime system either because
+  they are found to have been evaluated or not referenced by the rest of
+  the program
 
 Steps
 -----

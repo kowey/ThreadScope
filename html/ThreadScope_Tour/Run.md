@@ -6,37 +6,37 @@ Run ThreadScope on a sample program and get a trace.
 
 Steps
 -----
-# Copy the following parallel code to hellofib.hs
+1. Copy the following parallel code to hellofib.hs
 
-     import Control.Parallel.Strategies
-     import System.Environment
+         import Control.Parallel.Strategies
+         import System.Environment
 
-     fib 0 = 1
-     fib 1 = 1
-     fib n = runEval $ do
-       x <- rpar (fib (n-1))
-       y <- rseq (fib (n-2))
-       return (x + y + 1)
+         fib 0 = 1
+         fib 1 = 1
+         fib n = runEval $ do
+           x <- rpar (fib (n-1))
+           y <- rseq (fib (n-2))
+           return (x + y + 1)
 
-     main = do
-       args <- getArgs
-       n <- case args of
-             []    -> return 20 
-             [x]   -> return (read x)
-             _     -> fail ("Usage: hellofib [n]")
-       print (fib n)
+         main = do
+           args <- getArgs
+           n <- case args of
+                 []    -> return 20 
+                 [x]   -> return (read x)
+                 _     -> fail ("Usage: hellofib [n]")
+           print (fib n)
 
-# Build hellofib.hs
+1. Build hellofib.hs
 
-     ghc -O2 -rtsopts -eventlog -threaded hellofib
+         ghc -O2 -rtsopts -eventlog -threaded hellofib
 
-# Run hellofib
+1. Run hellofib
 
-     ./hellofib +RTS -N2
+         ./hellofib +RTS -N2
 
-# View its trace
+1. View its trace
 
-     threadscope hellofib.eventlog # on Windows, hellofib.exe.eventlog
+        threadscope hellofib.eventlog # on Windows, hellofib.exe.eventlog
 
 Follow the [installation instructions](ThreadScope#Installing_ThreadScope) on
 the ThreadScope homepage
