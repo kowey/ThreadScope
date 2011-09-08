@@ -24,38 +24,38 @@ Steps
  
 2. Run the sudoku2 program on a sample input, using just one core
 
-        ./sudoku2 sudoku17.16000.txt +RTS -s
+        ./sudoku2 sudoku17.1000.txt +RTS -s
 
 3. Examine the statistics output.  Look for statistics like the following:
 
-         SPARKS: 2 (0 converted, 2 pruned)
-         
-         INIT  time    0.00s  (  0.00s elapsed)
-         MUT   time   56.82s  ( 60.01s elapsed)
-         GC    time    1.62s  (  1.86s elapsed)
-         EXIT  time    0.00s  (  0.00s elapsed)
-         Total time   58.44s  ( 61.87s elapsed)
+        SPARKS: 2 (0 converted, 2 pruned)
+      
+        INIT  time    0.00s  (  0.00s elapsed)
+        MUT   time    3.88s  (  4.01s elapsed)
+        GC    time    0.11s  (  0.13s elapsed)
+        EXIT  time    0.00s  (  0.00s elapsed)
+        Total time    3.99s  (  4.14s elapsed)
 
-4. Notice here the *total* time elapsed (61.87s in my sample).  Note
+4. Notice here the *total* time elapsed (4.14s in my sample).  Note
    this as your baseline time.   You do not want the parallel version
    of your program to be any slower than this. 
 
 5. Run the program again using a couple of cores, again generating
    statistics
 
-        ./sudoku2 sudoku17.16000.txt +RTS -s -N2
+        ./sudoku2 sudoku17.1000.txt +RTS -s -N2
 
 6. Examine the statistics output, looking for the following:
 
-          SPARKS: 2 (1 converted, 1 pruned)
-          
-          INIT  time    0.00s  (  0.00s elapsed)
-          MUT   time   55.14s  ( 36.20s elapsed)
-          GC    time    7.64s  (  3.61s elapsed)
-          EXIT  time    0.00s  (  0.00s elapsed)
-          Total time   62.78s  ( 39.82s elapsed)
+        SPARKS: 2 (1 converted, 1 pruned)
+      
+        INIT  time    0.00s  (  0.00s elapsed)
+        MUT   time    3.84s  (  2.79s elapsed)
+        GC    time    0.43s  (  0.17s elapsed)
+        EXIT  time    0.00s  (  0.00s elapsed)
+        Total time    4.27s  (  2.97s elapsed)
 
-7. Notice the wall clock speedup (from 61.87s to 39.82s)
+7. Notice the wall clock speedup (from 4.14s to 2.97s)
 
 8. Notice also the number of sparks that were created and compare
    to the single core case. In both cases, two sparks are created,
