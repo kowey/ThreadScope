@@ -59,8 +59,10 @@ Steps
 
 8. Notice also the number of sparks that were created and compare
    to the single core case. In both cases, two sparks are created,
-   but in the single core case they are both /pruned/, thrown out.
-   In the two core case, we see one of the sparks being /converted/
+   but in the single core case they are both *pruned*, thrown out.
+   In the two core case, we see one of the sparks being *converted*
    (executed).
+
+   TODO... bit of discussion here
 
 [ph-tutorial]: http://community.haskell.org/~simonmar/par-tutorial.pdf
