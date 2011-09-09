@@ -1,4 +1,4 @@
-pristine:b93529baa34e37c311475f2aeeedecc25fddadf75b906fbf1c3e4c5745b8f863
+pristine:21b36769cab97a5a6d1efda4bde26f746ccd2a9233b178717d0c8936ace95e43
 Starting with inventory:
 0000057931-abac2ae96674d7ba725832fd35d1a3a29979b5da1f1bffa834058446f884179b
 [TAG 0.1.2
@@ -860,3 +860,38 @@ Eric Kow <eric@well-typed.com>**20110909073642
  Ignore-this: 5b283c45decb21c767aeea608ae4f522
 ] 
 hash: 0000000145-488377ccda886a6cb82bd101a36328e0a2cde7af542c810424a6b4e46446e139
+[Beginnings of a tutorial.
+Eric Kow <eric@well-typed.com>**20110909072139
+ Ignore-this: 8a835fc530caf126ca1723bf4dc0c35c
+] 
+hash: 0000177167-7a39d28c186892b6fc82786fb8362bf042d4bba17dd95d9718ba479b1d80dccf
+[tutorial: import bsort example from 2009 paper
+Eric Kow <eric@well-typed.com>**20110909072330
+ Ignore-this: 620ab3738cde00a9e90cc4fbb857b091
+] 
+hash: 0000028197-389d73a1888976c33e9518db956b902f47c1686713eb18cb1205a64bb042e1f7
+[tutorial bsort: Make makefile slightly more portable
+Eric Kow <eric@well-typed.com>**20110909055351
+ Ignore-this: 6d41527b09ee0ec15ac8eaccadef18c2
+] 
+hash: 0000001807-c85a655b01d5e90b1adc925a4093eae47af1a78bba89ddfbcf6a444be61f6b8c
+[tutorial bsort: Use -O2
+Eric Kow <eric@well-typed.com>**20110909062133
+ Ignore-this: d08755959e3139f5c295b64789e8eb90
+] 
+hash: 0000000712-4eaa622b518717b66547655e02ba49f744b657d9bd961f88afc3dec6c6ce2f00
+[tutorial bsort: Use consistent set of random numbers for easier comparison.
+Eric Kow <eric@well-typed.com>**20110909062152
+ Ignore-this: f585789fa65bb01a5d99662ff1dd7f6
+] 
+hash: 0000059827-10ed4deb9d71b1349dc1ffd1516be41c44e39b80bdd1b773b2d4b8b66e4890a2
+[tutorial bsort: Modernise RTS flags so that we are logging scheduler events
+Eric Kow <eric@well-typed.com>**20110909062208
+ Ignore-this: 626d18257d2291f37d35b61c9ab0ceaa
+] 
+hash: 0000001477-107a8941948982f1b53156a4007850921599bad73c09b6e695948d08489a9ba5
+[tutorial: simple profiling content
+Eric Kow <eric@well-typed.com>**20110909074238
+ Ignore-this: 26bd2686ccdc67142ad31f1343f0377d
+] 
+hash: 0000456512-e19ba3281b6f6e19aed351246392bd7fbe7eef344829276c199c647bce9f6e9f
